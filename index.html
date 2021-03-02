@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Boostrap y flexbox</h1>
+      <div class="row">
+        <!-- Navbar con menú -->
+        <div
+          id="nav"
+          class="d-flex flex-row justify-content-center bg-primary text-white aling-items-center"
+        >
+          <!-- De lo anterior
+        d-flex: indica que será flexbox
+        (flex-row lo ponemos solo para ver, el lector ya entiende de hecho que se trata de una fila por la clase anterior)
+        justify-content-center = para hacer que lo que esté dentro del navbar este centrado
+        bg-sucess =  success un color; podemos ver el resto de los colores en colors en la pc de bstp
+        text-white
+        aling-items-center = para que quede bien centrado todo-->
+          <!-- aquí incorporamos los elementos del navbar -->
+          <a href="#">Bienvenida</a>
+          <a href="#">Conócenos</a>
+          <a href="#">Contáctanos</a>
+        </div>
+      </div>
+      <!-- Fin del Navbar -->
+
+      <div class="row">
+        <!-- Primera columna pequeña -->
+        <!-- en ves de div aquí podría haber puesto un sectión que ocupe toda esta primera columna -->
+        <div id="noticias" class="d-flex flex-column p-3 bg-light">
+          <!-- 
+          d-flex = para trabajar con flexbox
+          flex-column = para trabajar en columnas
+          p-3 = padding 3 (bootstrap mide de 1 a 5 y en la documentación de la pagina dice cuanto vale cada 1)
+          este pading deja de ambos lados un espaciado de 3
+          bg-light = color de fondo
+          -->
+          <h3>Noticias</h3>
+          <!-- Buena práctica poner class/id a los divs para saber que contendrán -->
+          <div id="imgnoticias"></div>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            architecto nam
+            <b
+              >deserunt ducimus praesentium nemo odio in laborum beatae minus,
+              obcaecati laudantium saepe delectus</b
+            >, fugit quae earum culpa officia modi!
+          </p>
+        </div>
+        <!-- Segunda columna principal -->
+        <div id="principal" class="d-flex flex-column p-3 bg-light">
+          <h3>Contenido exclusivo</h3>
+          <div id="imgprincipal"></div>
+          <div class="d-flex">
+            <!-- este seria otro contenedor flex dentro del contenedor este
+            porque a este le vamos a poner un flex wrap -->
+            <div class="flex-wrap pr-2">
+              <!-- pr-2 = padding right 2 -->
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita omnis neque sed nostrum? Quasi eum sit similique dolor
+                aut! Assumenda in animi totam blanditiis voluptatem ullam
+                sapiente eum porro temporibus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
